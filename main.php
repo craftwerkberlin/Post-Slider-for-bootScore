@@ -17,13 +17,13 @@ function my_scripts() {
 
     wp_enqueue_script( 'swiper-js', plugins_url( '/js/swiper.min.js', __FILE__ ));
     
-    wp_enqueue_script( 'custom-swiper-js', plugins_url( '/js/custom.swiper.js', __FILE__ ));
+    wp_enqueue_script( 'slider', plugins_url( '/js/slider.js', __FILE__ ));
     
     wp_register_style( 'swiper', plugins_url('css/swiper.min.css', __FILE__) );
         wp_enqueue_style( 'swiper' );
     
-    wp_register_style( 'slider', plugins_url('css/slider.css', __FILE__) );
-        wp_enqueue_style( 'slider' );
+    wp_register_style( 'style', plugins_url('css/style.css', __FILE__) );
+        wp_enqueue_style( 'style' );
     }
 
 add_action('wp_enqueue_scripts','my_scripts');
