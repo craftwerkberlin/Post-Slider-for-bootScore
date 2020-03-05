@@ -5,7 +5,7 @@ Contributors: craftwerk
 Requires at least: 4.5
 Tested up to: 5.3.2
 Requires PHP: 5.6
-Stable tag: 1.0.0
+Stable tag: 1.0.1
 License: GNU General Public License v2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -32,6 +32,10 @@ posts: number of posts to display
 
 
 == Changelog ==
+
+    = 1.0.1 - March 02 2020 =
+    
+        * Changed arrows to fontawesome
 
     = 1.0.0 - February 29 2020 =
     
