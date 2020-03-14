@@ -33,6 +33,10 @@ posts: number of posts to display
 
 == Changelog ==
 
+    = 1.0.2 - March 12 2020 =
+    
+        * Changed Meta from text-secondary to text-muted
+
     = 1.0.1 - March 02 2020 =
     
         * Changed arrows to fontawesome
