@@ -22,8 +22,8 @@ function my_scripts() {
     wp_register_style( 'swiper', plugins_url('css/swiper.min.css', __FILE__) );
         wp_enqueue_style( 'swiper' );
     
-    wp_register_style( 'style', plugins_url('css/style.css', __FILE__) );
-        wp_enqueue_style( 'style' );
+    wp_register_style( 'custom-style', plugins_url('css/custom-style.css', __FILE__) );
+        wp_enqueue_style( 'custom-style' );
     }
 
 add_action('wp_enqueue_scripts','my_scripts');
