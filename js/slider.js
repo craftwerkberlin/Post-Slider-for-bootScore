@@ -87,13 +87,5 @@ jQuery(document).ready(function ($) {
             },
         });
     });
-
+    
 });
-
-
-
-
-
-
-
-

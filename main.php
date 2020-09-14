@@ -1,5 +1,5 @@
 <?php
-/*Plugin Name: Post Slider for bootScore
+/*Plugin Name: bS Post Slider
 Plugin URI: https://bootscore.me/plugins/post-slider/
 Description: Post slider for bootScore theme https://bootscore.me. Use Shortcode like this [post-slider type="post" category="sample-category" order="ASC" orderby="title" posts="12"] and read readme.txt in PlugIn folder for options.
 Version: 1.0.1
@@ -14,7 +14,7 @@ License: GPLv2
 
 // Register Styles and Scripts
 function my_scripts() {
-
+    
     wp_enqueue_script( 'swiper-js', plugins_url( '/js/swiper.min.js', __FILE__ ));
     
     wp_enqueue_script( 'slider', plugins_url( '/js/slider.js', __FILE__ ));

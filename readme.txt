@@ -1,4 +1,4 @@
-=== Post Slider ===
+=== bS Post Slider ===
 
 Contributors: craftwerk
 
@@ -25,7 +25,7 @@ Use a shortcode like this to display your Posts in a Page:
 
 Options:
 
-category: category slug – multiple categories separated by comma
+category: category slug
 order: ASC or DESC
 orderby: date or title
 posts: number of posts to display
