@@ -1,8 +1,8 @@
 <?php
 /*Plugin Name: bS Post Slider
-Plugin URI: https://bootscore.me/plugins/post-slider/
-Description: Post slider for bootScore theme https://bootscore.me. Use Shortcode like this [post-slider type="post" category="sample-category" order="ASC" orderby="title" posts="12"] and read readme.txt in PlugIn folder for options.
-Version: 1.0.1
+Plugin URI: https://bootscore.me/plugins/bs-post-slider/
+Description: Post slider for bootScore theme https://bootscore.me. Use Shortcode like this [bs-post-slider type="post" category="sample-category" order="ASC" orderby="title" posts="12"] and read readme.txt in PlugIn folder for options.
+Version: 1.0.3
 Author: Bastian Kreiter
 Author URI: https://crftwrk.de
 License: GPLv2
@@ -30,7 +30,7 @@ add_action('wp_enqueue_scripts','my_scripts');
 
 
 // Post Slider Shortcode
-add_shortcode( 'post-slider', 'bootscore_post_slider' );
+add_shortcode( 'bs-post-slider', 'bootscore_post_slider' );
 function bootscore_post_slider( $atts ) {
 	ob_start();
 	extract( shortcode_atts( array (
@@ -53,7 +53,7 @@ function bootscore_post_slider( $atts ) {
 
 <!-- Swiper -->
 
-<div class="px-5 position-relative my-5">
+<div class="px-5 position-relative my-5 post-slider">
 
     <div class="swiper-container">
 
@@ -97,8 +97,12 @@ function bootscore_post_slider( $atts ) {
                     </small>
                     <?php endif; ?>
                     <!-- Excerpt & Read more -->
-                    <div class="card-text mt-auto">
-                        <?php the_excerpt(); ?> <a class="read-more" href="<?php the_permalink(); ?>"><?php _e('Read more', 'bootscore'); ?></a>
+                    <div class="card-text">
+                        <?php the_excerpt(); ?>
+                    </div>
+                            
+                    <div class="mt-auto">
+                        <a class="read-more" href="<?php the_permalink(); ?>"><?php _e('Read more »', 'bootscore'); ?></a>
                     </div>
                     <!-- Tags -->
                     <?php bootscore_tags(); ?>
