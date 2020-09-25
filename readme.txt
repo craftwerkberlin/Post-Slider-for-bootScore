@@ -5,7 +5,7 @@ Contributors: craftwerk
 Requires at least: 4.5
 Tested up to: 5.6
 Requires PHP: 5.6
-Stable tag: 1.0.3
+Stable tag: 1.0.4
 License: GNU General Public License v2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -32,6 +32,10 @@ posts: number of posts to display
 
 
 == Changelog ==
+
+    = 1.0.4 - September 25 2020 =
+    
+        * Improved category badge
 
     = 1.0.3 - September 17 2020 =
     

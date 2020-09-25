@@ -2,7 +2,7 @@
 /*Plugin Name: bS Post Slider
 Plugin URI: https://bootscore.me/plugins/bs-post-slider/
 Description: Post slider for bootScore theme https://bootscore.me. Use Shortcode like this [bs-post-slider type="post" category="sample-category" order="ASC" orderby="title" posts="12"] and read readme.txt in PlugIn folder for options.
-Version: 1.0.3
+Version: 1.0.4
 Author: Bastian Kreiter
 Author URI: https://crftwrk.de
 License: GPLv2
@@ -66,19 +66,9 @@ function bootscore_post_slider( $atts ) {
                 <?php the_post_thumbnail('medium', array('class' => 'card-img-top')); ?>
 
                 <div class="card-body d-flex flex-column">
-                    <div class="mb-2">
-                        <!-- Category Badge -->
-                        <?php
-				            $thelist = '';
-				            $i = 0;
-				            foreach( get_the_category() as $category ) {
-				                if ( 0 < $i ) $thelist .= ' ';
-								    $thelist .= '<a href="' . esc_url( get_category_link( $category->term_id ) ) . '" class="badge badge-secondary">' . $category->name.'</a>';
-								    $i++;
-								}
-								echo $thelist;
-				            ?>
-                    </div>
+                    
+                    <?php bootscore_category_badge(); ?>
+                    
                     <!-- Title -->
                     <h2 class="blog-post-title">
                         <a href="<?php the_permalink(); ?>">
